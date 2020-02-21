@@ -1,0 +1,143 @@
+/*
+Theme Name: Alpha
+Theme URI: https://alpha-bd.com/themes/alpha
+Author: Md. Saifur Rahaman
+Author URI: https://saifurpro.com
+Description: Hyper Minimal WordPress Theme.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: alpha
+Tags: blog, e-commerce, education, entertainment, holiday, news, photography, portfolio, grid-layout, one-column, two-columns, three-columns, four-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-header, custom-logo, custom-menu, editor-style, featured-images
+*/
+
+h1.heading {
+  font-family: 'Arial Black';
+  width: 700px;
+  margin: auto;
+  margin-bottom: 70px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #ccc;
+}
+
+img.custom-logo {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+h3.tagline {
+  font-family: Arial;
+  margin: auto;
+  font-size: 18px;
+  margin-top: 50px;
+  margin-bottom: 15px;
+  width: 700px;
+  text-align: center;
+}
+
+h2.post-title {
+  margin-bottom: 30px;
+}
+
+.post {
+  margin-bottom: 50px;
+}
+
+.post p {
+  font-family: 'Helvetica Neue';
+  line-height: 1.7em;
+  font-size: 18px;
+}
+
+.post .row:nth-child(2) {
+  padding-bottom: 50px;
+  border-bottom: 1px solid #ccc;
+}
+
+.post:last-child .row:nth-child(2) {
+  border-bottom: none;
+}
+
+.footer {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  background-color: #222;
+  color: #ccc;
+}
+
+.tags li {
+  color: #3d9970;
+}
+
+.post_pagination a {
+  margin-bottom: 15px;
+}
+
+.copyright .textwidget p {
+  margin-bottom: 0;
+}
+
+.page-header {
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 35px;
+  padding: 170px 0;
+}
+
+.author-section {
+  border: 1px solid #ddd;
+  margin-bottom: 15px;
+  padding: 15px;
+}
+
+.author img {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.author-desc {
+  text-align: left;
+}
+
+.single-slider img {
+  max-height: 500px;
+}
+
+.search-highlight {
+  background-color: #ff0;
+  font-weight: 700;
+}
+
+.comment-form input {
+  border: 1px solid #ddd;
+  width: 100%;
+  padding: 7px;
+  border-radius: 5px;
+}
+
+.comment-form textarea {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  resize: none;
+}
+
+.comment-form input[type=checkbox] {
+  width: auto;
+  margin-right: 5px;
+}
+
+.comment-form p.comment-form-cookies-consent label {
+  font-size: 90%;
+}
+
+.comment-form input[type=submit] {
+  width: auto;
+  padding: 12px 18px;
+}
