@@ -141,6 +141,24 @@ if(is_active_sidebar("sidebar1")){
                             </div>
                         </div>
 
+                        <div class="col-md-12" style="background-color: #777;">
+                        <?php 
+                        if(class_exists("ACF")){
+                            _e("<h2>Related Posts</h2>", "alpha");
+                            $related_posts = get_field("related_posts");
+                            $loop = new WP_Query(array( 
+                                "post__in"=>    $related_posts,
+                                "orderby"   =>  "post__in",
+                            ));
+
+                            while($loop->have_posts()): $loop->the_post();
+                            ?>
+                            <h4><a href=""><?php the_title(); ?></a></h4>
+                        <?php endwhile; wp_reset_query();
+                        }
+                        ?>
+                        </div>
+
                         <div class="col-md-12">
                         <?php 
                         if(class_exists("ACF")): ?> 

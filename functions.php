@@ -3,6 +3,10 @@
 if( file_exists( dirname(__FILE__) . '/inc/tgm.php') ) {
     require_once dirname(__FILE__) . '/inc/tgm.php';
 }
+
+if( file_exists( dirname(__FILE__) . '/inc/acf-metabox.php') ) {
+    require_once dirname(__FILE__) . '/inc/acf-metabox.php';
+}
 if ( class_exists( 'Attachments' ) ){
     require_once("lib/attachments.php");
 }
@@ -218,3 +222,8 @@ if( function_exists('acf_add_options_page') ) {
 	acf_add_options_page();
 	
 }
+
+function acf_show_admin(){
+    return false;
+}
+add_filter("acf/settings/show_admin", "acf_show_admin");
